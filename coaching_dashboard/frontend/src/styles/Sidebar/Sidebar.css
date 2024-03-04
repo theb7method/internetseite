@@ -1,0 +1,36 @@
+/* sidebar.css */
+.sidebar-root {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 60px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar-open {
+    width: 240px;
+  }
+  
+  .sidebar-closed .MuiListItemText-root,
+  .sidebar-closed .toggle-button {
+    display: none;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .content-shift {
+    margin-left: 240px;
+  }
+  
+  .toggle-button {
+    margin: 10px;
+  }
+  
